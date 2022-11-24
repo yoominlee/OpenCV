@@ -1,0 +1,5 @@
+/home/cona/git/OpenCV/build/CMakeFiles/rebuild_cache.dir
+/home/cona/git/OpenCV/build/CMakeFiles/edit_cache.dir
+/home/cona/git/OpenCV/build/CMakeFiles/Trackbar.dir
+/home/cona/git/OpenCV/build/CMakeFiles/Image.dir
+/home/cona/git/OpenCV/build/CMakeFiles/Mat.dir
