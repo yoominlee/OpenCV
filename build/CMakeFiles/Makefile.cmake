@@ -51,7 +51,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Trackbar.dir/DependInfo.cmake"
+  "CMakeFiles/Histogram.dir/DependInfo.cmake"
+  "CMakeFiles/Mouse3.dir/DependInfo.cmake"
+  "CMakeFiles/Mouse2.dir/DependInfo.cmake"
   "CMakeFiles/Image.dir/DependInfo.cmake"
-  "CMakeFiles/Mat.dir/DependInfo.cmake"
   )

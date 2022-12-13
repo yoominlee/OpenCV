@@ -53,9 +53,10 @@ CMAKE_BINARY_DIR = /home/cona/git/OpenCV/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Trackbar.dir/all
+all: CMakeFiles/Histogram.dir/all
+all: CMakeFiles/Mouse3.dir/all
+all: CMakeFiles/Mouse2.dir/all
 all: CMakeFiles/Image.dir/all
-all: CMakeFiles/Mat.dir/all
 
 .PHONY : all
 
@@ -65,38 +66,93 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Trackbar.dir/clean
+clean: CMakeFiles/Histogram.dir/clean
+clean: CMakeFiles/Mouse3.dir/clean
+clean: CMakeFiles/Mouse2.dir/clean
 clean: CMakeFiles/Image.dir/clean
-clean: CMakeFiles/Mat.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Trackbar.dir
+# Target rules for target CMakeFiles/Histogram.dir
 
 # All Build rule for target.
-CMakeFiles/Trackbar.dir/all:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/depend
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=5,6 "Built target Trackbar"
-.PHONY : CMakeFiles/Trackbar.dir/all
+CMakeFiles/Histogram.dir/all:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/depend
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=1,2 "Built target Histogram"
+.PHONY : CMakeFiles/Histogram.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Trackbar.dir/rule: cmake_check_build_system
+CMakeFiles/Histogram.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Trackbar.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Histogram.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 0
-.PHONY : CMakeFiles/Trackbar.dir/rule
+.PHONY : CMakeFiles/Histogram.dir/rule
 
 # Convenience name for target.
-Trackbar: CMakeFiles/Trackbar.dir/rule
+Histogram: CMakeFiles/Histogram.dir/rule
 
-.PHONY : Trackbar
+.PHONY : Histogram
 
 # clean rule for target.
-CMakeFiles/Trackbar.dir/clean:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/clean
-.PHONY : CMakeFiles/Trackbar.dir/clean
+CMakeFiles/Histogram.dir/clean:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/clean
+.PHONY : CMakeFiles/Histogram.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Mouse3.dir
+
+# All Build rule for target.
+CMakeFiles/Mouse3.dir/all:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/depend
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=7,8 "Built target Mouse3"
+.PHONY : CMakeFiles/Mouse3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Mouse3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Mouse3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/Mouse3.dir/rule
+
+# Convenience name for target.
+Mouse3: CMakeFiles/Mouse3.dir/rule
+
+.PHONY : Mouse3
+
+# clean rule for target.
+CMakeFiles/Mouse3.dir/clean:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/clean
+.PHONY : CMakeFiles/Mouse3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Mouse2.dir
+
+# All Build rule for target.
+CMakeFiles/Mouse2.dir/all:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/depend
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=5,6 "Built target Mouse2"
+.PHONY : CMakeFiles/Mouse2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Mouse2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Mouse2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 0
+.PHONY : CMakeFiles/Mouse2.dir/rule
+
+# Convenience name for target.
+Mouse2: CMakeFiles/Mouse2.dir/rule
+
+.PHONY : Mouse2
+
+# clean rule for target.
+CMakeFiles/Mouse2.dir/clean:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/clean
+.PHONY : CMakeFiles/Mouse2.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Image.dir
@@ -105,7 +161,7 @@ CMakeFiles/Trackbar.dir/clean:
 CMakeFiles/Image.dir/all:
 	$(MAKE) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/depend
 	$(MAKE) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=1,2 "Built target Image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=3,4 "Built target Image"
 .PHONY : CMakeFiles/Image.dir/all
 
 # Build rule for subdir invocation for target.
@@ -124,33 +180,6 @@ Image: CMakeFiles/Image.dir/rule
 CMakeFiles/Image.dir/clean:
 	$(MAKE) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/clean
 .PHONY : CMakeFiles/Image.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Mat.dir
-
-# All Build rule for target.
-CMakeFiles/Mat.dir/all:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/depend
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cona/git/OpenCV/build/CMakeFiles --progress-num=3,4 "Built target Mat"
-.PHONY : CMakeFiles/Mat.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Mat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Mat.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cona/git/OpenCV/build/CMakeFiles 0
-.PHONY : CMakeFiles/Mat.dir/rule
-
-# Convenience name for target.
-Mat: CMakeFiles/Mat.dir/rule
-
-.PHONY : Mat
-
-# clean rule for target.
-CMakeFiles/Mat.dir/clean:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/clean
-.PHONY : CMakeFiles/Mat.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

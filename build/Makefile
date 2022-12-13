@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/cona/git/OpenCV/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Trackbar
+# Target rules for targets named Histogram
 
 # Build rule for target.
-Trackbar: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Trackbar
-.PHONY : Trackbar
+Histogram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Histogram
+.PHONY : Histogram
 
 # fast build rule for target.
-Trackbar/fast:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/build
-.PHONY : Trackbar/fast
+Histogram/fast:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/build
+.PHONY : Histogram/fast
+
+#=============================================================================
+# Target rules for targets named Mouse3
+
+# Build rule for target.
+Mouse3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse3
+.PHONY : Mouse3
+
+# fast build rule for target.
+Mouse3/fast:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/build
+.PHONY : Mouse3/fast
+
+#=============================================================================
+# Target rules for targets named Mouse2
+
+# Build rule for target.
+Mouse2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Mouse2
+.PHONY : Mouse2
+
+# fast build rule for target.
+Mouse2/fast:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/build
+.PHONY : Mouse2/fast
 
 #=============================================================================
 # Target rules for targets named Image
@@ -135,46 +161,6 @@ Image: cmake_check_build_system
 Image/fast:
 	$(MAKE) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/build
 .PHONY : Image/fast
-
-#=============================================================================
-# Target rules for targets named Mat
-
-# Build rule for target.
-Mat: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Mat
-.PHONY : Mat
-
-# fast build rule for target.
-Mat/fast:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/build
-.PHONY : Mat/fast
-
-src/01_Mat.o: src/01_Mat.cpp.o
-
-.PHONY : src/01_Mat.o
-
-# target to build an object file
-src/01_Mat.cpp.o:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/src/01_Mat.cpp.o
-.PHONY : src/01_Mat.cpp.o
-
-src/01_Mat.i: src/01_Mat.cpp.i
-
-.PHONY : src/01_Mat.i
-
-# target to preprocess a source file
-src/01_Mat.cpp.i:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/src/01_Mat.cpp.i
-.PHONY : src/01_Mat.cpp.i
-
-src/01_Mat.s: src/01_Mat.cpp.s
-
-.PHONY : src/01_Mat.s
-
-# target to generate assembly for a file
-src/01_Mat.cpp.s:
-	$(MAKE) -f CMakeFiles/Mat.dir/build.make CMakeFiles/Mat.dir/src/01_Mat.cpp.s
-.PHONY : src/01_Mat.cpp.s
 
 src/02_Image.o: src/02_Image.cpp.o
 
@@ -203,32 +189,86 @@ src/02_Image.cpp.s:
 	$(MAKE) -f CMakeFiles/Image.dir/build.make CMakeFiles/Image.dir/src/02_Image.cpp.s
 .PHONY : src/02_Image.cpp.s
 
-src/03_Trackbar.o: src/03_Trackbar.cpp.o
+src/07-1_MouseCallBack2-1.o: src/07-1_MouseCallBack2-1.cpp.o
 
-.PHONY : src/03_Trackbar.o
+.PHONY : src/07-1_MouseCallBack2-1.o
 
 # target to build an object file
-src/03_Trackbar.cpp.o:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/src/03_Trackbar.cpp.o
-.PHONY : src/03_Trackbar.cpp.o
+src/07-1_MouseCallBack2-1.cpp.o:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/src/07-1_MouseCallBack2-1.cpp.o
+.PHONY : src/07-1_MouseCallBack2-1.cpp.o
 
-src/03_Trackbar.i: src/03_Trackbar.cpp.i
+src/07-1_MouseCallBack2-1.i: src/07-1_MouseCallBack2-1.cpp.i
 
-.PHONY : src/03_Trackbar.i
+.PHONY : src/07-1_MouseCallBack2-1.i
 
 # target to preprocess a source file
-src/03_Trackbar.cpp.i:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/src/03_Trackbar.cpp.i
-.PHONY : src/03_Trackbar.cpp.i
+src/07-1_MouseCallBack2-1.cpp.i:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/src/07-1_MouseCallBack2-1.cpp.i
+.PHONY : src/07-1_MouseCallBack2-1.cpp.i
 
-src/03_Trackbar.s: src/03_Trackbar.cpp.s
+src/07-1_MouseCallBack2-1.s: src/07-1_MouseCallBack2-1.cpp.s
 
-.PHONY : src/03_Trackbar.s
+.PHONY : src/07-1_MouseCallBack2-1.s
 
 # target to generate assembly for a file
-src/03_Trackbar.cpp.s:
-	$(MAKE) -f CMakeFiles/Trackbar.dir/build.make CMakeFiles/Trackbar.dir/src/03_Trackbar.cpp.s
-.PHONY : src/03_Trackbar.cpp.s
+src/07-1_MouseCallBack2-1.cpp.s:
+	$(MAKE) -f CMakeFiles/Mouse3.dir/build.make CMakeFiles/Mouse3.dir/src/07-1_MouseCallBack2-1.cpp.s
+.PHONY : src/07-1_MouseCallBack2-1.cpp.s
+
+src/07_MouseCallBack2.o: src/07_MouseCallBack2.cpp.o
+
+.PHONY : src/07_MouseCallBack2.o
+
+# target to build an object file
+src/07_MouseCallBack2.cpp.o:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/src/07_MouseCallBack2.cpp.o
+.PHONY : src/07_MouseCallBack2.cpp.o
+
+src/07_MouseCallBack2.i: src/07_MouseCallBack2.cpp.i
+
+.PHONY : src/07_MouseCallBack2.i
+
+# target to preprocess a source file
+src/07_MouseCallBack2.cpp.i:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/src/07_MouseCallBack2.cpp.i
+.PHONY : src/07_MouseCallBack2.cpp.i
+
+src/07_MouseCallBack2.s: src/07_MouseCallBack2.cpp.s
+
+.PHONY : src/07_MouseCallBack2.s
+
+# target to generate assembly for a file
+src/07_MouseCallBack2.cpp.s:
+	$(MAKE) -f CMakeFiles/Mouse2.dir/build.make CMakeFiles/Mouse2.dir/src/07_MouseCallBack2.cpp.s
+.PHONY : src/07_MouseCallBack2.cpp.s
+
+src/08_Histogram.o: src/08_Histogram.cpp.o
+
+.PHONY : src/08_Histogram.o
+
+# target to build an object file
+src/08_Histogram.cpp.o:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/src/08_Histogram.cpp.o
+.PHONY : src/08_Histogram.cpp.o
+
+src/08_Histogram.i: src/08_Histogram.cpp.i
+
+.PHONY : src/08_Histogram.i
+
+# target to preprocess a source file
+src/08_Histogram.cpp.i:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/src/08_Histogram.cpp.i
+.PHONY : src/08_Histogram.cpp.i
+
+src/08_Histogram.s: src/08_Histogram.cpp.s
+
+.PHONY : src/08_Histogram.s
+
+# target to generate assembly for a file
+src/08_Histogram.cpp.s:
+	$(MAKE) -f CMakeFiles/Histogram.dir/build.make CMakeFiles/Histogram.dir/src/08_Histogram.cpp.s
+.PHONY : src/08_Histogram.cpp.s
 
 # Help Target
 help:
@@ -236,20 +276,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Trackbar"
+	@echo "... Histogram"
+	@echo "... Mouse3"
+	@echo "... rebuild_cache"
+	@echo "... Mouse2"
 	@echo "... Image"
-	@echo "... Mat"
-	@echo "... src/01_Mat.o"
-	@echo "... src/01_Mat.i"
-	@echo "... src/01_Mat.s"
 	@echo "... src/02_Image.o"
 	@echo "... src/02_Image.i"
 	@echo "... src/02_Image.s"
-	@echo "... src/03_Trackbar.o"
-	@echo "... src/03_Trackbar.i"
-	@echo "... src/03_Trackbar.s"
+	@echo "... src/07-1_MouseCallBack2-1.o"
+	@echo "... src/07-1_MouseCallBack2-1.i"
+	@echo "... src/07-1_MouseCallBack2-1.s"
+	@echo "... src/07_MouseCallBack2.o"
+	@echo "... src/07_MouseCallBack2.i"
+	@echo "... src/07_MouseCallBack2.s"
+	@echo "... src/08_Histogram.o"
+	@echo "... src/08_Histogram.i"
+	@echo "... src/08_Histogram.s"
 .PHONY : help
 
 

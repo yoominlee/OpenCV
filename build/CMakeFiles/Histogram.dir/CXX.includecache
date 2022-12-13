@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cona/git/OpenCV/src/08_Histogram.cpp
+iostream
+-
+opencv4/opencv2/opencv.hpp
+-
+array
+-
+
